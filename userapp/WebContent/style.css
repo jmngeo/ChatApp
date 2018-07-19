@@ -1,0 +1,35 @@
+@charset "UTF-8";
+h1{
+		color:green;
+	    text-align: center;
+}
+.chatbox{
+	position:fixed;
+	bottom: 0 !important;
+  	right: 0 !important;
+	z-index: 100;
+	height:520px !important;
+	width:350px;
+	padding-right:10px;
+/*	border:2px solid grey; 
+	border-radius: 5px; */
+	/*   visibility:hidden;  */
+}
+.backgroundcolor /* OF THE CHAT BOX */
+{
+	background-color:#eeeeec!important;
+}
+
+.showHide{  /* FOR THE SHOW HIDE BUTTON */
+	
+	position:fixed;
+	bottom: 0 !important;
+  	right: 0 !important;
+	z-index: 100;
+	height:46px !important;
+	width:350px;
+	padding-right:10px;
+	
+}
+
+
