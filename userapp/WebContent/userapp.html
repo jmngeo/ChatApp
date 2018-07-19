@@ -1,0 +1,65 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta http-equiv='Content-Type' content='text/html;charset=UTF-8'/>
+		<link rel="stylesheet" href="style.css" type="text/css">
+		
+		<script src="resources/sap-ui-core.js"
+				id="sap-ui-bootstrap"
+				data-sap-ui-libs="sap.m,sap.suite.ui.commons" 
+				data-sap-ui-xx-bindingSyntax="complex"
+				data-sap-ui-theme="sap_bluecrystal">
+		</script>
+		<!-- only load the mobile lib "sap.m" and the "sap_bluecrystal" theme -->
+		<script type="text/javascript" src="https://cdn.pubnub.com/sdk/javascript/pubnub.4.21.2.min.js"></script>
+
+		<script>
+				sap.ui.localResources("userapp");
+			
+				var flexChatBox = sap.ui.view({id:"idFlexChatBox", viewName:"userapp.userChatBox", type:sap.ui.core.mvc.ViewType.JS});
+				/* var app = new sap.m.App({initialPage:"idUserPage"});
+				app.addPage(userPage); */
+				flexChatBox.placeAt("content1");
+				
+				var expandView = sap.ui.view({id:"idExpandView", viewName:"userapp.expandView", type:sap.ui.core.mvc.ViewType.JS});
+				expandView.placeAt("content2");
+				
+		</script>
+	</head>
+<body class="sapUiBody" role="application">
+	<h1>This is a Sample Web Page</h1>
+	<h2>This is another heading</h2>
+
+	<div>
+	
+	<h3>This is another heading</h3>
+
+		<p>Lorem Ipsum is <strong>simply dummy text</strong> of the printing and typesetting industry. <em>Lorem Ipsum</em> has been the industry's standard dummy text ever since the 1500s,<span> when an unknown printer took a galley of type and scrambled it to make a type specimen book.</span> It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+		<p>Curabitur ac dictum tellus. Suspendisse faucibus tellus vel leo porttitor, ut cursus lectus cursus. Phasellus placerat nisi quis justo luctus feugiat ut ornare velit. Nulla facilisi. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nunc blandit vehicula velit. Donec sagittis ultricies eros. Nam sit amet commodo ligula, sed molestie leo. Sed tortor nunc, rhoncus non dui et, tincidunt interdum eros. Fusce porta posuere sodales. Vestibulum id libero et nisl interdum auctor. Ut condimentum convallis pretium. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nunc urna ex, condimentum a arcu at, eleifend egestas lectus. Etiam sit amet nisi non leo sagittis vulputate.</p>
+	</div>
+
+	<p>blah blah blah demo demo demo nothing to see here....</p>
+	<ol>
+		<li>Red</li>
+		<li>Orange</li>
+		<li>Yellow
+			<ul>
+				<li>sunflower</li>
+				<li>banana</li>		
+			</ul>
+		</li>
+	</ol>
+	<ul>
+		<li>Red</li>
+		<li>Orange</li>
+		<li>Yellow</li>
+	</ul>
+	<p>Aliquam dignissim lectus a magna condimentum, a fringilla est viverra. Ut congue mollis accumsan. Vestibulum congue molestie tempor. Integer ultrices pretium aliquam. Maecenas fringilla orci non viverra ullamcorper. Nam facilisis risus nec risus accumsan, facilisis elementum nisl semper. Mauris eget augue a diam tempus sagittis. Pellentesque tincidunt enim ac ex eleifend blandit. Sed sagittis, justo non dignissim varius, mi nibh volutpat arcu, sit amet elementum augue velit a magna. Donec cursus dolor mauris, malesuada pulvinar mi lobortis vel. Donec fermentum blandit erat, a iaculis urna venenatis quis. Donec in tortor massa.</p>
+	
+	
+	<div id="content1" class="chatbox"></div>
+	<div id="content2" class="showHide"></div>
+
+</body>
+</html>
